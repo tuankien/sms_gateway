@@ -1,0 +1,12 @@
+#login-box
+{
+    width: 400px;
+    border: 1px solid #dfdfdf;
+    margin: auto;
+    padding: 20px;
+}
+
+#login-box legend
+{
+    font-size: 1.8em;
+}

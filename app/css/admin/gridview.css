@@ -1,0 +1,169 @@
+.grid-view-loading
+{
+	background:url(images/loading.gif) no-repeat;
+}
+
+.grid-view{width: 100%}
+
+.grid-view table.items
+{
+	background: white;
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px #D0E3EF solid;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+	font-size: 0.9em;
+	border: 1px white solid;
+	padding: 0.3em;
+}
+
+.grid-view table.items th
+{
+	color: white;
+	background: url("images/grid_th.gif") repeat-x scroll left top white;
+	text-align: center;
+    white-space: nowrap;
+}
+
+.grid-view table.items th a
+{
+	color: #EEE;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.grid-header{font-weight: bold;color: #EEE;}
+
+.grid-view table.items th a:hover
+{
+	color: #FFF;
+}
+
+.grid-view table.items th a.asc
+{
+	background:url(images/inc.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(images/dec.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+	background: #F8F8F8;
+}
+
+.grid-view table.items tr.odd
+{
+	background: #E5F1F4;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #BCE774;
+}
+
+.grid-view table.items tr:hover
+{
+	background: #ECFBD4;
+}
+
+.grid-view table.items td.fixed {
+    width: 40px;
+    background-color: #92bfd9;
+    text-align:center;
+}
+.grid-view .link-column img
+{
+	border: 0;
+}
+
+.grid-view .button-column
+{
+	text-align: center;
+	width: 80px;
+}
+
+.grid-view .button-column img
+{
+	border: 0;
+}
+
+.grid-view .checkbox-column
+{
+	width: 15px;
+}
+
+.grid-view .summary
+{
+	margin: 0 0 5px 0;
+	text-align: right;
+}
+
+.grid-view .pager
+{
+	margin: 5px 0 0 0;
+	text-align: right;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+.grid-view table.items #select-all{
+    padding: 0px;
+    margin: 0px;
+}
+
+.chart-box .grid-view{
+    text-align: left;
+    padding-left: 170px;
+}
+
+.chart-box .grid-view table.items{
+    width: 420px;
+}
+
+.chart-box .grid-view table.items th
+{
+    color: #900000;
+	background: url("images/statistic_grid_th.gif") repeat-x scroll left top white;
+}
+
+.chart-box .grid-view table.items th a{
+    color: #900000;
+}
+
+.chart-box .grid-view table.items tr.odd
+{
+	background: #FBFBEE;
+}
+
+.chart-box .grid-view table.items tr.even
+{
+	background: #F9F9ED;
+}
+
+.grid-view .items table.no-style tr,
+.grid-view .items table.no-style td{
+    border: none;
+    border-collapse: inherit;
+}
+
+.grid-view .items table.no-style td b{
+    font-size: 1.1em;
+}

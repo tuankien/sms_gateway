@@ -1,0 +1,101 @@
+.jqueryslidemenu {font: bold 12px Verdana;}
+
+.jqueryslidemenu ul{
+padding: 0 10px;
+list-style-type: none;
+text-transform: uppercase;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+background: url(images/toolbar-separator.gif) no-repeat right top;
+position: relative;
+display: inline;
+float: left;
+z-index: 100;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: block;
+color: #222;
+padding: 13px 10px;
+text-decoration: none;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+display: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+color: #222;
+}
+
+.jqueryslidemenu ul li a:hover, .jqueryslidemenu ul li a.active{
+background: url(images/toolbar-bg-active.gif) repeat-x;
+color: white;
+}
+
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+border-bottom: 1px solid silver;
+font: normal 12px Verdana;
+position: absolute;
+left: 0;
+padding: 0;
+display: block;
+visibility: hidden;
+text-transform: none;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+background-color: #fff;
+color: #333;
+width: 180px; /*width of sub menus*/
+padding: 6px;
+margin: 0;
+border: 1px solid silver;
+border-bottom: dotted 1px silver;
+border-top: 0;
+}
+
+.jqueryslidemenu ul li ul li a:hover{ /*sub menus hover style*/
+background: #e2f4f7;
+color: #333;
+}
+
+.jqueryslidemenu ul li ul li a:link, .jqueryslidemenu ul li ul li a:visited{
+color: #333;
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.jqueryslidemenu ul li a img.downarrowclass{
+background: url(images/down.gif) no-repeat;
+position: absolute;
+top: 18px;
+right: 7px;
+width:10px;
+height: 5px;
+}
+.jqueryslidemenu ul li a:hover img.downarrowclass, .jqueryslidemenu ul li a.active img.downarrowclass{
+background: url(images/down-active.gif) no-repeat;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}

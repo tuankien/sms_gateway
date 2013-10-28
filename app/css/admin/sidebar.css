@@ -1,0 +1,93 @@
+.columns {
+    background: url("images/side_col_bg.gif") repeat-y scroll 207px 0;
+}
+#sidebar
+{
+    float: left;
+    width:220px;
+    padding-bottom: 25px;
+}
+
+#main
+{
+    margin-left: 240px;
+    padding-bottom: 25px;
+}
+
+#sidebar h3 {
+    background-color: #2f98c7;
+    border-bottom: solid 1px #DFDFDF;
+    padding: 8px 10px;
+    margin:0;
+}
+#sidebar h3 a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#sidebar ul {
+    background-color: #d5eff3;
+    margin:0;
+    padding:0 0 20px 2px;
+}
+#sidebar ul li {
+    list-style-type: none;
+}
+#sidebar ul li a, #sidebar ul li a:link {
+    text-decoration: none;
+    display: block;
+}
+
+#sidebar ul li a span {
+    color: #333;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-bottom: dotted 1px #2f98c7;
+}
+#sidebar ul li a.active span{
+    background: none;
+    background-color: #E259AE;
+    color: #fff;
+}
+
+#sidebar ul li a.disable span{
+    background: none;
+    background-color: #C6C6C6;
+    color: #fff;
+}
+
+#sidebar ul li span span.changed, #sidebar ul li span span.error {
+    margin:0;
+    padding: 0;
+    border-bottom: none;
+    background: none;
+}
+#sidebar ul li span span.changed {
+    float:left;
+}
+#sidebar ul li span span.error{
+    float:right;
+    background: url("images/icon_error.png") no-repeat scroll 0 0 transparent;
+    height: 22px;
+    width: 22px;
+    display: none;
+}
+
+#sidebar ul li span span.show{
+    display: block;
+}
+
+#sidebar a.sButton{
+    background-color: #FFFFFF;
+    border: 1px solid #0D0501;
+    margin: 5px auto auto;
+    text-align: center;
+    width: 100px;
+    -moz-border-radius: 5px;
+}
+
+#sidebar a.sButton span{height: 15px;}
